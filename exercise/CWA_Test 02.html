@@ -7,7 +7,7 @@
 	<style>
 
 
-		.circle {
+		.foo {
 			width: 50px;
 			height: 50px;
 			border-radius: 50%;
@@ -16,23 +16,23 @@
 
 		}
 
-		.circle:hover {
-			animation: slide 5s infinite;
+		.foo:hover {
+			animation: bobble 5s infinite;
 		}
 
-		#circle1 {
+		#foo1 {
 			animation-timing-function: ease-in-out;
 			background-color: #FFC107;
 
 
 		}
 
-		#circle2 {
+		#foo2 {
 			animation-timing-function: linear;
 			background-color: #8BC34A;
 		}
 
-		#circle3 {
+		#foo3 {
 			animation-timing-function: cubic-bezier(0,1,.76,1.14);
 			background-color: #2196F3;
 		}
@@ -47,7 +47,7 @@
 			margin: 0 auto;
 		}
 
-		@keyframes slide {
+		@keyframes bobble {
 			0% {
 				transform: translate3d(0,0,0);
 			}
@@ -62,14 +62,36 @@
 			}
 		}
 
+		
+		body{
+         font-family: 'Titillium Web', sans-serif;
+         }
+
+		p.bioText{
+         font-weight: 300;
+         font-size: 1.05em;
+         line-height: 130%;
+        }
+
+        p.bioText > a{
+         color: #000000;
+        }
+
+        p.bioText > a:hover{
+          background-color: #33FF66; 
+        }
+
 	</style>
 </head>
 <body>
 <div id="container">
-	<div class="circle" id="circle1"></div>
-	<div class="circle" id="circle2"></div>
-	<div class="circle" id="circle3"></div>
+	<div class="foo" id="foo1"></div>
+	<div class="foo" id="foo2"></div>
+	<div class="foo" id="foo3"></div>
 </div>
+
+ <p class="bioText"><a href="../index.html">Take me back home...</a></p>
+
 
 </body>
 </html>
